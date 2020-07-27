@@ -12,6 +12,7 @@ html {
 *,
 *::before,
 *::after {
+  content: "";
   box-sizing: inherit;
 }
 * {
@@ -80,6 +81,17 @@ body {
 .navigation-list {
   display: flex;
 }
+.margin {
+  margin-right: 10px;
+}
+.icon-mail {
+  width: 14px;
+  height: 10px;
+}
+.icon-phone {
+  width: 10px;
+  height: 14px;
+}
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -98,11 +110,15 @@ body {
 .adress-list-item {
   margin-right: 30px;
 }
+
 .header-mail,
 .header-tel {
   font-family: var(--main-font);
   font-style: normal;
   color: var(--description-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-mail:hover,
 .header-mail:focus,
@@ -118,10 +134,19 @@ body {
 .footer-social-link:focus {
   color: var(--accent-color);
 }
+.header-mail:hover svg,
+.header-mail:focus svg,
+.header-tel:hover svg,
+.header-tel:focus svg {
+  fill: var(--accent-color);
+}
 
 /* Герой */
 .hero {
-  background-color: var(--titles-color);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-right: 252px;
   padding-bottom: 200px;
@@ -141,6 +166,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  height: 50px;
+  width: 200px;
   display: block;
   align-items: center;
   text-align: center;
@@ -177,6 +204,17 @@ body {
 .advantages-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.advantages-list-item {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.advantages-list-item-svg {
+  width: 70px;
+  height: 70px;
+}
+
 /* Чем мы занимаемся */
 .occupation {
   padding-bottom: 94px;
@@ -225,6 +263,8 @@ body {
 .team-list-item {
   background-color: #ffffff;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -278,6 +318,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.client-list-link-svg1 {
+  width: 45px;
+  height: 50px;
+}
+.client-list-link-svg2 {
+  width: 40px;
+  height: 52px;
+}
+.client-list-link-svg3 {
+  width: 41px;
+  height: 43px;
+}
+.client-list-link-svg4 {
+  width: 80px;
+  height: 42px;
+}
+.client-list-link-svg5 {
+  width: 59px;
+  height: 47px;
+}
+.client-list-link-svg6 {
+  width: 88px;
+  height: 45px;
 }
 /*Подвал*/
 .footer {
@@ -355,8 +419,7 @@ body {
 .filter-list-btn:focus {
   color: #ffffff;
   background: var(--accent-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   border: none;
 }
@@ -388,8 +451,7 @@ body {
 .filter-examples-link:hover,
 .filter-examples-link:focus {
   background-color: rgba(33, 150, 243, 0.9);
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   border: none;
 }
 .filter-examples-list {
