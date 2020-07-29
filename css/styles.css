@@ -115,7 +115,8 @@ body {
   margin-right: 30px;
 }
 
-.navigation-list-link:hover:after {
+.studio:after,
+.portfolio:after {
   position: absolute;
   display: block;
   width: 100%;
