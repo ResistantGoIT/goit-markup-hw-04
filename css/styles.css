@@ -393,7 +393,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-size: cover;
 }
 
 .footer .container {
@@ -455,6 +454,7 @@ body {
   margin-right: 69px;
 }
 .footer-com-on {
+  width: 206px;
   padding-top: 12px;
   padding-bottom: 40px;
   margin-right: 94px;
